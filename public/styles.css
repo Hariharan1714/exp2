@@ -1,47 +1,52 @@
-/* styles.css */
-
-/* General styles for all pages */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #333;
+    flex-direction: column;
 }
 
 form {
     background: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-select {
+input, select {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
 }
 
 button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#rzp-button1 {
     width: auto;
     padding: 10px 20px;
     background-color: #007bff;
@@ -50,29 +55,16 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    display: block;
-    margin: 20px auto; 
+    display: inline-block;
+    margin-top: 10px;
 }
 
-button:hover {
+#rzp-button1:hover {
     background-color: #0056b3;
 }
 
-a {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Expense page specific styles */
 #listOfExpenses, #leaderboard {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
@@ -80,11 +72,15 @@ a:hover {
     background: #fff;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
-    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
