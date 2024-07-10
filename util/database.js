@@ -7,7 +7,7 @@ const Sequelize = require('sequelize')
 //     password: 'apple@17'
 // });
 
-const sequelize = new Sequelize('expense', 'root', '1718',{
+const sequelize = new Sequelize('expense', 'admin', 'harrywedshpd',{
     dialect: 'mysql',
     host: 'database-1.c76uskew0vbg.ap-southeast-2.rds.amazonaws.com'
 })
