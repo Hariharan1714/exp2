@@ -79,6 +79,13 @@ button:hover {
     align-items: center;
 }
 
+#pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 h1 {
     font-size: 24px;
     font-weight: bold;

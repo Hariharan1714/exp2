@@ -29,9 +29,14 @@
     <button id="rzp-button1">Buy Premium</button>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     
-    <ul id='listOfExpenses'>
+    <ul id='listOfExpenses'></ul>
 
-    </ul>
+    <div id="pagination-controls">
+        <button onclick="prevPage()">Previous</button>
+        <span id="page-info"></span>
+        <button onclick="nextPage()">Next</button>
+    </div>
+    
     <ul id="leaderboard"></ul>
     <script src='./index.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
