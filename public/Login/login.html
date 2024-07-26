@@ -16,6 +16,17 @@
         <button>Login</button>
     </form>
     <a href="../Signup/signup.html">New User - Signup Now</a>
+    <button id="forgotPasswordBtn">Forgot Password</button>
+
+    <div id="forgotPasswordForm" style="display: none;">
+        <h3>Forgot Password</h3>
+        <form id="forgotPassword">
+            <label for="forgotEmail">Email:</label><br>
+            <input type="email" id="forgotEmail" name="forgotEmail" required><br><br>
+            <input type="submit" value="Reset Password">
+        </form>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./login.js" ></script>
